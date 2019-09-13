@@ -30,7 +30,7 @@ public class SubjectsController {
 
 
     @RequestMapping(value="subject/{id}", method=RequestMethod.GET)
-    public Subject getNotes(@PathVariable Long id){
+    public Subject getSub(@PathVariable Long id){
         return subrepo.findOne(id);
     }
 
